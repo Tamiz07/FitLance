@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://Tamiz07.github.io/fitlance",
+  "homepage": "https://Tamiz07.github.io",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
