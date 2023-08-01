@@ -1,0 +1,112 @@
+.about-story,
+.about-vision,
+.about-mission {
+    margin-top: 9rem;
+}
+
+
+.about-image-section {
+    /* height: 75vh; */
+    border-radius: 50%;
+    overflow: hidden;
+    transform: skew(15deg);
+    transition: var(--transition);
+}
+
+.about-image-section img {
+    height: 100%;
+}
+
+.about-image-section:nth-child(2) {
+    transform: skew(-15deg);
+}
+
+.about-image-section:hover {
+    transform: skew(0);
+}
+
+.about-content-section h1 {
+    margin-bottom: 2rem;
+}
+
+
+.about-content-section p {
+    margin-bottom: 1rem;
+}
+
+.about-story-container,
+.about-mission-container {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap: 10%;
+    place-items: center;
+}
+
+.about-vision-container {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    gap: 10%;
+    place-items: center;
+}
+
+@media screen and (max-width: 1280px) {
+    .about-story-container,
+    .about-mission-container {
+        display: grid;
+        grid-template-columns: 40% 55%;
+        gap: 5%;
+    }
+
+    .about-vision-container {
+        display: grid;
+        grid-template-columns: 55% 40%;
+        gap: 5%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about-story-container,
+    .about-mission-container {
+        display: grid;
+        grid-template-columns: 40% 55%;
+        gap: 5%;
+    }
+
+    .about-vision-container {
+        display: grid;
+        grid-template-columns: 55% 40%;
+        gap: 5%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about-story-container,
+    .about-mission-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        gap: 2rem;
+    }
+
+    .about-vision-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        gap: 2rem;
+    }
+
+    .about-story,
+    .about-vision,
+    .about-mission {
+        margin-top: 5rem;
+    }
+
+    .about-image-section {
+        width: 90%;
+    }
+
+}

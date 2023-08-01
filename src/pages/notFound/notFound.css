@@ -1,0 +1,15 @@
+.notfound {
+    margin-top: 6rem;
+}
+
+.notfound-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 50vh;
+    text-align: center;
+}
+
+
