@@ -9,10 +9,20 @@ import "./navbar.css";
 const Navbar = () => {
     const [isNavShowing, setIsNavShowing] = useState(false);
 
+    const handleClick = () => {
+      window.scrollTo(0, 0);
+      setIsNavShowing(false);
+    };
+
+    const handleLinkClick = () => {
+      window.scrollTo(0, 0);
+      setIsNavShowing(prev => !prev);
+    };
+
   return (
     <nav>
       <div className="container nav-container">
-        <Link to="/" className="logo" onClick={() => setIsNavShowing(false)}>
+        <Link to="/" className="logo" onClick={handleClick}>
           <h1>FIT<span className="thunder"><AiTwotoneThunderbolt /></span><span>LANCE</span></h1>
         </Link>
         <ul className={`nav-links ${isNavShowing ? 'show-nav' : 'hide-nav'}`}>
@@ -20,7 +30,7 @@ const Navbar = () => {
                 links.map(({name, path}, index) => {
                     return (
                         <li key={index}>
-                            <NavLink to={path} className={({isActive}) => isActive ? 'active-nav' : ''} onClick={() => setIsNavShowing(prev => !prev)}>{name}</NavLink>
+                            <NavLink to={path} className={({isActive}) => isActive ? 'active-nav' : ''} onClick={handleLinkClick}>{name}</NavLink>
                         </li>
                     )
                 })

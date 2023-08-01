@@ -6,11 +6,14 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
 
 const Footer = () => {
+    const handleLinkClick = () => {
+        window.scrollTo(0, 0);
+    };
   return (
     <footer>
         <div className="container footer-container">
             <article>
-                <Link to="/" className="logo">
+                <Link to="/" className="logo" onClick={handleLinkClick}>
                     <h1>FIT<span className="thunder"><AiTwotoneThunderbolt /></span><span>LANCE</span></h1>
                 </Link>
                 <p>
@@ -25,24 +28,24 @@ const Footer = () => {
             </article>
             <article>
                 <h4>Permalinks</h4>
-                <Link to="/about">About</Link>
-                <Link to="/plans">Plans</Link>
-                <Link to="/trainers">Trainers</Link>
-                <Link to="/gallery">Gallery</Link>
-                <Link to="/contact">Contact</Link>
+                <Link to="/about" onClick={handleLinkClick}>About</Link>
+                <Link to="/plans" onClick={handleLinkClick}>Plans</Link>
+                <Link to="/trainers" onClick={handleLinkClick}>Trainers</Link>
+                <Link to="/gallery" onClick={handleLinkClick}>Gallery</Link>
+                <Link to="/contact" onClick={handleLinkClick}>Contact</Link>
             </article>
             <article>
                 <h4>Insights</h4>
-                <Link to="/s">Blog</Link>
-                <Link to="/s">Case Studies</Link>
-                <Link to="/s">Events</Link>
-                <Link to="/s">Communities</Link>
-                <Link to="/s">FAQs</Link>
+                <Link to="/s" onClick={handleLinkClick}>Blog</Link>
+                <Link to="/s" onClick={handleLinkClick}>Case Studies</Link>
+                <Link to="/s" onClick={handleLinkClick}>Events</Link>
+                <Link to="/s" onClick={handleLinkClick}>Communities</Link>
+                <Link to="/s" onClick={handleLinkClick}>FAQs</Link>
             </article>
             <article>
                 <h4>Get In Touch</h4>
-                <Link to="/contact">Contact Us</Link>
-                <Link to="/s">Support</Link>
+                <Link to="/contact" onClick={handleLinkClick}>Contact Us</Link>
+                <Link to="/s" onClick={handleLinkClick}>Support</Link>
             </article>
         </div>
         <div className="footer-copyright">
@@ -53,3 +56,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
