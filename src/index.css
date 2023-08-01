@@ -255,6 +255,10 @@ footer {
     color: var(--color-primary);
 }
 
+article a:hover {
+    color: var(--color-secondary);
+}
+
 
 /* ====== ABOUT US STYLES ======== */
 .header {

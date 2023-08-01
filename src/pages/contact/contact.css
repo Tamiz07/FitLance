@@ -72,6 +72,10 @@ form button {
     color: var(--color-gray-100);
 }
 
+form button:focus {
+    transform: scale(1.01);
+}
+
 @media screen and (max-width: 576px) {
     .contact {
         margin-top: 5rem;
