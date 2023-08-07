@@ -6,6 +6,12 @@ import { Link } from "react-router-dom";
 import { AiFillCaretRight } from "react-icons/ai";
 
 const Programs = () => {
+
+  const handleClick = (title) => {
+    window.scrollTo(0, 0);
+    document.title = title;
+  }
+
   return (
     <section className="programs">
       <div className="container programs-container">
@@ -20,7 +26,7 @@ const Programs = () => {
                 <span>{card.icon}</span>
                 <h4>{card.title}</h4>
                 <small>{card.info}</small>
-                <Link to={card.path} className="btn sm">Learn More <AiFillCaretRight /></Link>
+                <Link to={card.path} className="btn sm" onClick={() => handleClick("Learn more - Fitlance")}>Learn More <AiFillCaretRight /></Link>
               </Card>
             );
           })}

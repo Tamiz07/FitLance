@@ -39,7 +39,7 @@ const Contact = () => {
       <section className="contact">
         <div className="container contact-container">
           <div className="contact-wrapper">
-            <a href="mailto:example@example.com"><MdEmail /></a>
+            <a href="mailto:tamizh6946@gmail.com"><MdEmail /></a>
             <a href="https://m.me/tamizh7"><BsMessenger /></a>
             <a href="https://wa.me/+916383033772"><IoLogoWhatsapp /></a>
           </div>

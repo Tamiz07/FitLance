@@ -1,7 +1,14 @@
 import {Link} from 'react-router-dom';
 import MainImage from '../images/main_header.png';
+import { links } from '../data';
 
 const MainHeader = () => {
+
+  const handleClick = (title) => {
+    window.scrollTo(0, 0);
+    document.title = title;
+  }
+
   return (
     <header className="main-header">
       <div className="container main-header-container">
@@ -11,7 +18,7 @@ const MainHeader = () => {
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi maiores nobis loremque illo nisi porro!
           </p>
-          <Link to="/plans" className='btn lg'>Get Started</Link>
+          <Link to="/plans" className='btn lg' onClick={() => handleClick(links[3].title)}>Get Started</Link>
         </div>
         <div className="main-header-right">
           <div className="main-header-circle"></div>

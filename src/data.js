@@ -5,27 +5,33 @@ import {SiOpenaigym} from 'react-icons/si'
 export const links = [
     {
         name: "Home",
-        path: '/'
+        path: '/',
+        title: "Fitlance"
     },
     {
         name: "About",
-        path: '/about'
+        path: '/about',
+        title: "About Us - Fitlance"
     },
     {
         name: "Gallery",
-        path: '/gallery'
+        path: '/gallery',
+        title: "Gallery - Fitlance"
     },
     {
         name: "Plans",
-        path: '/plans'
+        path: '/plans',
+        title: "Plans - Fitlance"
     },
     {
         name: "Trainers",
-        path: '/trainers'
+        path: '/trainers',
+        title: "Our Trainers - Fitlance"
     },
     {
         name: "Contact",
-        path: '/contact'
+        path: '/contact',
+        title: "Contact Us - Fitlance"
     }
 ]
 
